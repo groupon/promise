@@ -5,6 +5,10 @@ Promise
     <img src="https://img.shields.io/hexpm/l/plug.svg"
          alt="License: Apache 2">
 </a>
+<a href="https://travis-ci.org/groupon/promise/">
+    <img src="https://travis-ci.org/groupon/promise.png"
+         alt="Travis Build">
+</a>
 <a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.groupon.promise%22%20a%3A%22promise%22">
     <img src="https://img.shields.io/maven-central/v/com.groupon.promise/promise.svg"
          alt="Maven Artifact">
