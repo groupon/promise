@@ -37,6 +37,7 @@ import com.groupon.promise.SyncPromiseListFunction;
  * Test the PromiseListFunctionResult.
  *
  * @author Stuart Siegrist (fsiegrist at groupon dot com)
+ * @since 0.1
  */
 public class PromiseListFunctionResultTest {
 
