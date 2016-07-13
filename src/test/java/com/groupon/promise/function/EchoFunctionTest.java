@@ -25,6 +25,7 @@ import org.junit.Test;
  * Test the EchoFunction.
  *
  * @author Stuart Siegrist (fsiegrist at groupon dot com)
+ * @since 0.1
  */
 public class EchoFunctionTest {
 
