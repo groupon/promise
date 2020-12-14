@@ -114,8 +114,11 @@
     <!--Dependency versions-->
     <jsr305.version>2.0.1</jsr305.version>
     <junit.version>4.11</junit.version>
-    <mockito.version>1.9.5</mockito.version>
+    <mockito.version>3.1.0</mockito.version>
     <slf4j.version>1.7.2</slf4j.version>
+
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
 
     <!--Coverage Settings-->
     <jacoco.check.line.coverage>0.8</jacoco.check.line.coverage>
@@ -143,7 +146,6 @@
       <artifactId>jsr305</artifactId>
       <version>${jsr305.version}</version>
     </dependency>
-
     <!-- Test dependencies -->
     <dependency>
       <groupId>junit</groupId>
@@ -153,7 +155,7 @@
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
-      <artifactId>mockito-all</artifactId>
+      <artifactId>mockito-core</artifactId>
       <version>${mockito.version}</version>
       <scope>test</scope>
     </dependency>
@@ -177,6 +179,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.0.1</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -189,6 +192,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -199,12 +203,9 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>findbugs-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.2</version>
       </plugin>
     </plugins>
   </build>
