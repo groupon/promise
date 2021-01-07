@@ -39,7 +39,7 @@ class PromiseCountdownHandler {
     private PromiseHandler<Throwable> handleFailure;
     private List<Throwable> failures = new ArrayList<>();
 
-    public PromiseCountdownHandler(AtomicInteger count, PromiseHandler<Void> handleSuccess, PromiseHandler<Throwable> handleFailure) {
+    PromiseCountdownHandler(AtomicInteger count, PromiseHandler<Void> handleSuccess, PromiseHandler<Throwable> handleFailure) {
         latch = count;
         this.handleSuccess = handleSuccess;
         this.handleFailure = handleFailure;

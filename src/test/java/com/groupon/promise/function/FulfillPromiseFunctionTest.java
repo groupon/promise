@@ -34,7 +34,7 @@ import com.groupon.promise.PromiseImpl;
 public class FulfillPromiseFunctionTest {
     private Promise<Integer> promise;
 
-    private Integer promiseVal = new Integer(200);
+    private Integer promiseVal = Integer.valueOf(200);
 
     @Before
     public void setUp() {

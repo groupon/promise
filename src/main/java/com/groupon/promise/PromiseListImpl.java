@@ -243,7 +243,7 @@ public class PromiseListImpl<T> extends PromiseImpl<Collection<T>> implements Pr
         private final PromiseCountdownHandler countdownHandler;
         private final PromiseImpl<T> childPromise;
 
-        public ConcurrencyLimitHandler(ConcurrentLinkedQueue<T> queueList, PromiseCountdownHandler countdownHandler,
+        ConcurrencyLimitHandler(ConcurrentLinkedQueue<T> queueList, PromiseCountdownHandler countdownHandler,
                                        PromiseImpl<T> childPromise) {
             this.queueList = queueList;
             this.countdownHandler = countdownHandler;

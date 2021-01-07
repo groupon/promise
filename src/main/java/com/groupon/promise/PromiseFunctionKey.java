@@ -28,7 +28,7 @@ class PromiseFunctionKey<T> {
     private ComparablePromiseFunction promiseFunction;
     private T parameter;
 
-    public PromiseFunctionKey(@Nonnull ComparablePromiseFunction promiseFunction, T parameter) {
+    PromiseFunctionKey(@Nonnull ComparablePromiseFunction promiseFunction, T parameter) {
         this.promiseFunction = promiseFunction;
         this.parameter = parameter;
     }
