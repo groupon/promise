@@ -20,12 +20,11 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
-import static org.mockito.Mockito.verifyZeroInteractions;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -537,7 +536,7 @@ public class PromiseImplTest {
 
         verify(onFulfilled, times(1)).handle(input);
         verifyNoMoreInteractions(onFulfilled);
-        verifyZeroInteractions(onFulfilledReversed);
+        verifyNoMoreInteractions(onFulfilledReversed);
     }
 
     @Test
@@ -729,7 +728,7 @@ public class PromiseImplTest {
         assertFalse(then.pending());
         assertTrue(then.fulfilled());
         assertFalse(then.rejected());
-        assertEquals(new Integer(1), then.value());
+        assertEquals(Integer.valueOf(1), then.value());
         assertNull(then.reason());
 
         assertFalse(nestedThen.pending());
