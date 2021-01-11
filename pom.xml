@@ -28,7 +28,7 @@
   <name>promise</name>
   <description>Provides the ability to execute a handler on a timer and reschedule on completion.</description>
   <url>https://github.com/groupon/promise</url>
-  <version>0.12.1-SNAPSHOT</version>
+  <version>0.12.2-SNAPSHOT</version>
 
   <licenses>
     <license>
